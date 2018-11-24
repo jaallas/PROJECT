@@ -31,7 +31,9 @@
         <activity android:name=".CoffeeTea" />
         <activity android:name=".Mocktails" />
         <activity android:name=".Smoothies" />
-        <activity android:name=".Soda"></activity>
+        <activity android:name=".Soda" />
+        <activity android:name=".Login" />
+        <activity android:name=".Database"></activity>
     </application>
 
 </manifest>

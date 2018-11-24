@@ -4,9 +4,12 @@ package ph.edu.ust.jatallas.project;
         import android.support.v7.app.AppCompatActivity;
         import android.os.Bundle;
         import android.view.View;
+        import android.widget.AdapterView;
+        import android.widget.ArrayAdapter;
         import android.widget.Button;
+        import android.widget.Spinner;
 
-public class Welcomepage extends AppCompatActivity {
+public class Welcomepage extends AppCompatActivity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -100,6 +103,15 @@ public class Welcomepage extends AppCompatActivity {
             public void onClick(View v) {
                 Intent soda = new Intent(getApplicationContext(), Soda.class);
                 startActivity(soda);
+            }
+        });
+
+        Button admin = (Button) findViewById(R.id.admin);
+        admin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent admin = new Intent(getApplicationContext(), Login.class);
+                startActivity(admin);
             }
         });
     }
